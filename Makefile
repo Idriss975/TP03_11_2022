@@ -4,6 +4,7 @@ CFLAGS = -Wall -Wextra
 Exec1: EX1 runEX1
 Exec2: Ex2 runEX2
 Exec3: Ex3 runEX3
+Exec4: Ex4 runEX4
 
 EX1 EX1.cpp:
 	$(CC) $(CFLANGS) EX1.cpp -o bin/EX1.exe
@@ -20,3 +21,7 @@ Ex3 Ex3.cpp:
 runEX3 bin/EX3.exe:
 	bin/EX3.exe
 
+Ex4 Ex4.cpp:
+	$(CC) $(CFLANGS) EX4.cpp -o bin/EX4.exe
+runEX3 bin/EX4.exe:
+	bin/EX4.exe

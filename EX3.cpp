@@ -1,9 +1,11 @@
 #include <iostream>
 using namespace std;
 
-void echange(double x, double b)
+void echange(int &x, int &b)
 {
-    
+    int temp = x;
+    x = b;
+    b = temp;
 }
 
 int main()
